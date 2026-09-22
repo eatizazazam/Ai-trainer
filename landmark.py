@@ -31,7 +31,7 @@ os.makedirs(output_folder, exist_ok=True)
 for video_file in os.listdir(input_folder):
     if video_file.endswith(".mp4"):
         video_path = os.path.join(input_folder, video_file)
-        print(f"🎥 Processing: {video_file}")
+        print(f" Processing: {video_file}")
 
         cap = cv.VideoCapture(video_path)
         landmark_list = []
